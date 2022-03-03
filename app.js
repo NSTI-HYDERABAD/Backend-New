@@ -9,7 +9,7 @@ const authJwt = require("./helpers/jwt");
 const errorHandler = require("./helpers/error-handler");
 
 app.use(cors());
-app.options("*", cors());
+app.options('Access-Control-Allow-Origin: *', cors());
 
 //middleware
 app.use(express.json());
